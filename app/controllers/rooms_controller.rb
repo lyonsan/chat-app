@@ -12,6 +12,9 @@ class RoomsController < ApplicationController
     end
   end
 
+  def index
+  end
+  
   private
   #:nameはroomsテーブルのname,user_idsの[]は配列として受け取ることを示す
   def room_params
