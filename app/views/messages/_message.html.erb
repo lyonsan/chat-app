@@ -5,7 +5,8 @@
       <%= message.user.name %>
     </div>
     <div class="message-date">
-      <%= message.created_at %>
+    <!--lメソッドで、指定した場所の時間に合わせられる-->
+      <%= l message.created_at %>
     </div>
   </div>
   <div class="message-bottom">
