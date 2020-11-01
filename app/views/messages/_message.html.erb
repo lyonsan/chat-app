@@ -1,0 +1,17 @@
+<div class="messages">
+  <div class="message-top">
+    <div class="message-user">
+    <!--renderでcollection: @messagesをしており、自然と_messagesの中ではmessageという変数で使えるようになっている-->
+      <%= message.user.name %>
+    </div>
+    <div class="message-date">
+    <!--lメソッドで、指定した場所の時間に合わせられる-->
+      <%= l message.created_at %>
+    </div>
+  </div>
+  <div class="message-bottom">
+    <div class="message-content">
+      <%= message.content %>
+    </div>
+  </div>
+</div>
