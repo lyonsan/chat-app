@@ -13,5 +13,10 @@
     <div class="message-content">
       <%= message.content %>
     </div>
+    <!--image_tagは画像を表示させられるヘルパーメソッド-->
+    <!--if message.image.attached? はファイルがレコードに添付しているかどうかで表示の有無を変えられる-->
+    <!--variant(resize: '幅x高さ')はActive Storage導入時に使えるメソッド-->
+    　<!--ファイルの表示サイズを指定できる-->
+    <%= image_tag message.image.variant(resize: '500x500'), class: 'message-image' if message.image.attached? %>
   </div>
 </div>

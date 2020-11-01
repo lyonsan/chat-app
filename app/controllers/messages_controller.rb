@@ -21,7 +21,7 @@ class MessagesController < ApplicationController
 
   def message_params
     #permitはフォームで入力した値を指定し、mergeはそれ以外の情報を追加するためのもの
-    params.require(:message).permit(:content).merge(user_id: current_user.id)
+    params.require(:message).permit(:content, :image).merge(user_id: current_user.id)
   end
 
 end

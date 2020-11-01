@@ -13,7 +13,7 @@
 <%= form_with model: [@room, @message], class: 'main-bottom', local: true do |f| %>
   <div class="message-area">
     <%= f.text_field :content, class: 'message-textarea', placeholder: 'type a message' %>
-    <label class="message-image">
+    <label class="form-image">
       <span class="image-file">画像</span>
       <%= f.file_field :image, class: 'hidden' %>
     </label>
